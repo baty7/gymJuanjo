@@ -89,13 +89,13 @@
     <!-- actions -->
 
     <menuitem name="Ver Clientes" id="modulo1_clientesGym_menu_1_list" parent="modulo1_clientesGym_menu_1"
-              action="modulo1_clientesGym_action_window"/>
+      action="modulo1_clientesGym_action_window"/>
 
     <menuitem name="Ver Cursos" id="modulo2_cursosGym_menu_2_list" parent="modulo2_cursosGym_menu_2"
-              action="modulo2_cursosGym_action_window"/>
+      action="modulo2_cursosGym_action_window"/>
     
     <menuitem name="Ver Profesores" id="modulo3_profesoresGym_menu_3_list" parent="modulo3_profesoresGym_menu_3"
-              action="modulo3_profesoresGym_action_window"/>
+      action="modulo3_profesoresGym_action_window"/>
     
   </data>
 </odoo>
