@@ -12,6 +12,14 @@ class modulo_Profesores(models.Model):
         string='Nombre', help='Nombre del profesor/a', required=True)
 
 
+    cursos_profesores =  fields.Many2many(
+        string='Cursos',
+        comodel_name='modulo2.cursos',
+        ondelete='cascade',
+    )
+    
+
+
 class modulo_Cursos(models.Model):
     _name = 'modulo2.cursos'
     _description = 'Modelo Cursos'
@@ -22,12 +30,8 @@ class modulo_Cursos(models.Model):
         string='Fecha de alta',
         default=lambda self: fields.Datetime.now(),
     )
+    clientes_id =  fields.One2many('modelo1_clientes', string='field_name',ondelete = 'restrict')
 
-    clientes_id = fields.Many2one(
-        string='Clientes',
-        comodel_name='modulo1.clientes',
-        ondelete='restrict',
-    )
 
 
 class modulo_Clientes(models.Model):
