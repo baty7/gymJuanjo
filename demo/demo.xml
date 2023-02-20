@@ -1,30 +1,20 @@
 <odoo>
     <data>
-<!--
-          <record id="object0" model="modulo_sge.modulo_sge">
-            <field name="name">Object 0</field>
-            <field name="value">0</field>
+          <record id="curso0" model="modulo2.cursos">
+            <field name="name">Sistemas de Gestion Empresarial</field>
+            <field name="schedule" eval="(datetime.now()).strftime('%Y-%m-%d')" />        
+          </record>
+          <record id="clientes0" model="modulo1.clientes">
+            <field name="name">Juan Jose Bautista Gallego</field>
+            <field name="dni">48737307P</field>
+            <field name="enrollment_date" eval="(datetime.now()).strftime('%Y-%m-%d')"/>        
+            <field name="fee">1</field>
+            <field name="curso_id" ref = 'curso0'/>
+          </record>
+          <record id="profesor0" model="modulo3.profesores">
+            <field name="name">Alexandre Ibañez</field>
+            <field name="cursos_profesores" eval="[(6,0, [ref('curso0')])]" />       
           </record>
 
-          <record id="object1" model="modulo_sge.modulo_sge">
-            <field name="name">Object 1</field>
-            <field name="value">10</field>
-          </record>
-
-          <record id="object2" model="modulo_sge.modulo_sge">
-            <field name="name">Object 2</field>
-            <field name="value">20</field>
-          </record>
-
-          <record id="object3" model="modulo_sge.modulo_sge">
-            <field name="name">Object 3</field>
-            <field name="value">30</field>
-          </record>
-
-          <record id="object4" model="modulo_sge.modulo_sge">
-            <field name="name">Object 4</field>
-            <field name="value">40</field>
-          </record>
--->
     </data>
 </odoo>
