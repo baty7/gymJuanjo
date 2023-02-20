@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_modulo1_clientes_admin_acl,access_modulo1_clientes_admin_default,model_modulo1_clientes,base.group_user,1,1,1,1
+access_modulo2_cursos_admin_acl,access_modulo2_cursos_admin_default,model_modulo2_cursos,base.group_user,1,1,1,1
+access_modulo3_profesores_admin_acl,access_modulo3_profesores_admin_default,model_modulo3_profesores,base.group_user,1,1,1,1
