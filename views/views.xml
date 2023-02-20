@@ -55,20 +55,28 @@
 -->
 
     <!-- Top menu item -->
-<!--
-    <menuitem name="moduloSGE" id="modulo_sge.menu_root"/>
--->
+
+    <menuitem name="Gimnasio" id="modulo1_clientesGym_menu_root"/>
+
     <!-- menu categories -->
-<!--
-    <menuitem name="Menu 1" id="modulo_sge.menu_1" parent="modulo_sge.menu_root"/>
-    <menuitem name="Menu 2" id="modulo_sge.menu_2" parent="modulo_sge.menu_root"/>
--->
+
+    <menuitem name="Clientes" id="modulo1_clientesGym_menu_1" parent="modulo1_clientesGym_menu_root"/>
+    <menuitem name="Cursos" id="modulo2_cursosGym_menu_2" parent="modulo1_clientesGym_menu_root"/>
+    <menuitem name="Profesores" id="modulo3_profesoresGym_menu_3" parent="modulo1_clientesGym_menu_root"/>
+
     <!-- actions -->
-<!--
-    <menuitem name="List" id="modulo_sge.menu_1_list" parent="modulo_sge.menu_1"
-              action="modulo_sge.action_window"/>
-    <menuitem name="Server to list" id="modulo_sge" parent="modulo_sge.menu_2"
-              action="modulo_sge.action_server"/>
--->
+
+    <menuitem name="Ver Clientes" id="modulo1_clientesGym_menu_1_list" parent="modulo1_clientesGym_menu_1"
+              action="modulo1_clientesGym_action_window"/>
+
+    <menuitem name="Ver Cursos" id="modulo2_cursosGym_menu_2_list" parent="modulo2_cursosGym_menu_2"
+              action="modulo2_cursosGym_action_window"/>
+    
+    <menuitem name="Ver Profesores" id="modulo3_profesoresGym_menu_3_list" parent="modulo3_profesoresGym_menu_3"
+              action="modulo3_profesoresGym_action_window"/>
+    
+
+
+
   </data>
 </odoo>
