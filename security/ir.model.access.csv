@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-modulo1_cliente_admin_acl,modulo1_cliente_admin_default,model_modulo1_cliente,base.group_user,1,1,1,1
+modulo1_cliente_admin_acl,modulo1_cliente_admin_default,model_modulo1_cliente,modulo1_admin,1,1,1,1
