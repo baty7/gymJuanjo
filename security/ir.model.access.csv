@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_modulo_sge_modulo_sge,modulo_sge.modulo_sge,model_modulo_sge_modulo_sge,base.group_user,1,1,1,1
+access_modulo1_cliente_admin_acl,access_modulo1_cliente_admin_default,model_modulo_cliente,base.group_user,1,1,1,1
