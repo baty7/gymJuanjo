@@ -6,12 +6,14 @@
       <field name="name">Vista de arbol de los clientes del gimnasio</field>
       <field name="model">modulo1.clientes</field>
       <field name="arch" type="xml">
-        <tree decoration-success=" trainings &gt; 5" decoration-warning="qty &lt; 4">
+
+        <tree decoration-success="trainings &gt; 5" decoration-warning="trainings &lt; 4">
           <field name="name"/>
           <field name="dni"/>
           <field name="enrollment_date"/>
           <field name="last_login"/>
           <field name="fee"/>
+          <field name="trainings"/>
           <field name="curso_id"/>
         </tree>
       </field>
