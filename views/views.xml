@@ -11,20 +11,33 @@
           <field name="dni"/>
           <field name="enrollment_date"/>
           <field name="last_login"/>
+          <field name="fee"/>
+          <field name="curso_id"/>
         </tree>
       </field>
     </record>
 
 
     <!-- actions opening views on models -->
-<!--
-    <record model="ir.actions.act_window" id="modulo_sge.action_window">
-      <field name="name">moduloSGE window</field>
-      <field name="res_model">modulo_sge.modulo_sge</field>
+
+    <record model="ir.actions.act_window" id="modulo1_clientesGym_action_window">
+      <field name="name">Accion de ventana para el modelo Clientes</field>
+      <field name="res_model">modulo1.clientes</field>
       <field name="view_mode">tree,form</field>
     </record>
--->
 
+    <record model="ir.actions.act_window" id="modulo2_cursosGym_action_window">
+      <field name="name">Accion de ventana para el modelo Cursos</field>
+      <field name="res_model">modulo2.cursos</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="modulo3_profesoresGym_action_window">
+      <field name="name">Accion de ventana para el modelo Profesores</field>
+      <field name="res_model">modulo3.profesores</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    
     <!-- server action to the one above -->
 <!--
     <record model="ir.actions.server" id="modulo_sge.action_server">
