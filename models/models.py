@@ -18,6 +18,21 @@ class modulo_Clientes(models.Model):
         string='Ultimo_acceso',
         default=lambda self: fields.Datetime.now(),
     )
+    photo = fields.Image(max_width=200,max_height=200)
+
+    fee = fields.Selection(string='Formato',help='Formato de disco',
+        selection=[('1', '4-10$'), ('2', '8-15$'),('3','12-20$')]
+    )
+    #trainings = fields.Integer(string = 'Clases',compute =_clases_ )
+
+    @api.constrains('dni')
+    def _check_(self):
+        for record in self:
+            if self.search([('dni', '=', record.dni)], limit=1) != record:
+                raise ValidationError("Error, DNI repetido")
+
+
+    
     
 
 
