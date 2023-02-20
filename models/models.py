@@ -61,7 +61,7 @@ class modulo_Clientes(models.Model):
         ondelete='restrict',
     )
     
-    #trainings = fields.Integer(string = 'Clases',compute =_clases_ )
+    trainings = fields.Integer(string = 'Clases')
 
     @api.constrains('dni')
     def _check_(self):

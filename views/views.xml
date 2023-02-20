@@ -6,7 +6,7 @@
       <field name="name">Vista de arbol de los clientes del gimnasio</field>
       <field name="model">modulo1.clientes</field>
       <field name="arch" type="xml">
-        <tree>
+        <tree decoration-success=" trainings &gt; 5" decoration-warning="qty &lt; 4">
           <field name="name"/>
           <field name="dni"/>
           <field name="enrollment_date"/>

@@ -9,6 +9,7 @@
             <field name="dni">48737307</field>
             <field name="enrollment_date" eval="(datetime.now()).strftime('%Y-%m-%d')"/>        
             <field name="fee">1</field>
+            <field name="trainings">6</field>
             <field name="curso_id" ref = 'curso0'/>
           </record>
           <record id="profesor0" model="modulo3.profesores">
