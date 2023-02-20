@@ -30,7 +30,7 @@ class modulo_Cursos(models.Model):
         string='Fecha de alta',
         default=lambda self: fields.Datetime.now(),
     )
-    clientes_id =  fields.One2many('modelo1_clientes', string='field_name',ondelete = 'restrict')
+    #clientes_id =  fields.One2many('modelo1_clientes', string='field_name',ondelete = 'restrict')
 
 
 
