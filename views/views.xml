@@ -17,6 +17,28 @@
       </field>
     </record>
 
+    <record model="ir.ui.view" id="modulo2_cursos_tree">
+      <field name="name">Vista de arbol de los cursos del gimnasio</field>
+      <field name="model">modulo2.cursos</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="schedule"/> 
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="modulo3_profesores_tree">
+      <field name="name">Vista de arbol de los profesores del gimnasio</field>
+      <field name="model">modulo3.profesores</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="cursos_profesores"/>
+        </tree>
+      </field>
+    </record>
+
 
     <!-- actions opening views on models -->
 
@@ -75,8 +97,5 @@
     <menuitem name="Ver Profesores" id="modulo3_profesoresGym_menu_3_list" parent="modulo3_profesoresGym_menu_3"
               action="modulo3_profesoresGym_action_window"/>
     
-
-
-
   </data>
 </odoo>
